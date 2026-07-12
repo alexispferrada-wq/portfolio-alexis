@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Opción A — Alexis Ferrada · Terminal Inmersivo</title>
+<title>Alexis Ferrada · Terminal Inmersivo</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -135,18 +136,26 @@ nav{position:sticky;top:0;z-index:60;background:rgba(10,14,20,.8);backdrop-filte
 .contacto .cta{justify-content:center}
 .canales{margin-top:32px;font-size:.78rem;color:var(--suave);display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
 
-footer{border-top:1px solid var(--linea);padding:30px 0;font-size:.75rem;color:var(--suave)}
+footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;background:var(--panel)}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:50px}
+.foot-brand .logo{font-size:.95rem}
+.foot-brand p{color:var(--suave);font-size:.85rem;margin-top:14px;max-width:320px}
+.foot-badges{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+.foot-badges span{font-size:.68rem;padding:5px 11px;border-radius:5px;border:1px solid var(--linea);color:var(--verde);background:rgba(61,220,132,.06)}
+.foot-col h4{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cian);margin-bottom:18px}
+.foot-col ul{list-style:none;display:grid;gap:11px}
+.foot-col li a{color:var(--suave);font-size:.85rem;display:inline-flex;align-items:center;gap:8px}
+.foot-col li a:hover{color:var(--verde)}
+.foot-col li a span.dot{width:5px;height:5px;border-radius:50%;background:var(--verde);opacity:.7}
+.foot-bottom{border-top:1px solid var(--linea);padding:22px 0;font-size:.75rem;color:var(--suave)}
 .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-
-/* SELECTOR DE OPCIONES */
-.opt-switch{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:100;display:flex;gap:4px;background:rgba(10,14,20,.85);backdrop-filter:blur(16px);border:1px solid var(--linea);border-radius:100px;padding:6px;font-family:'JetBrains Mono',monospace;font-size:.75rem}
-.opt-switch a{padding:8px 16px;border-radius:100px;color:var(--suave)}
-.opt-switch a.act{background:var(--verde);color:#06100A;font-weight:700}
-.opt-switch a:hover{color:#fff;text-shadow:none}
-.opt-switch a.act:hover{color:#06100A}
+.foot a{color:var(--suave)}
+.foot a:hover{color:var(--verde);text-shadow:none}
 
 @media(max-width:760px){
   section{padding:60px 0}
+  footer{padding-top:50px}
+  .foot-grid{grid-template-columns:1fr;gap:34px}
   .proyecto{grid-template-columns:1fr}
   .nav-links li.om{display:none}
 }
@@ -177,7 +186,7 @@ footer{border-top:1px solid var(--linea);padding:30px 0;font-size:.75rem;color:v
     <div class="cta">
       <a class="btn btn-verde" href="#proyectos">./ver-proyectos</a>
       <a class="btn" href="cv-alexis-ferrada.pdf" download>cv --download</a>
-      <a class="btn" href="https://github.com/alexispferrada-wq" rel="noopener">github</a>
+      <a class="btn" href="https://github.com/alexispferrada-wq" rel="noopener">portafolio · github</a>
     </div>
 
     <div class="term reveal">
@@ -189,6 +198,8 @@ footer{border-top:1px solid var(--linea);padding:30px 0;font-size:.75rem;color:v
         <div class="ln"><span class="ok">turbopos.cl</span> <span class="out">·</span> <span class="warn">voxmetrics (pre-venta)</span> <span class="out">·</span> <span class="ok">ecosistema-tusitioya (9 productos)</span></div>
         <div class="ln"><span class="p">$</span> experiencia --resumen</div>
         <div class="ln"><span class="out">10+ años en análisis de datos &amp; WFM → hoy full-stack Python/Node.js + IA</span></div>
+        <div class="ln"><span class="p">$</span> credenciales --destacadas</div>
+        <div class="ln"><span class="ok">Portafolio completo en GitHub</span> <span class="out">·</span> <span class="ok">Red Hat System Administration I</span> <span class="out">·</span> <span class="ok">Desarrollo de Aplicaciones Iniciales (INACAP)</span></div>
       </div>
     </div>
   </div>
@@ -270,6 +281,11 @@ footer{border-top:1px solid var(--linea);padding:30px 0;font-size:.75rem;color:v
   <div class="wrap">
     <h2 class="reveal">Formación</h2>
     <div class="cert reveal">
+      <h3>Red Hat System Administration I (RH124) — Ver. 9.3</h3>
+      <p class="detalle">Red Hat · Administración de sistemas Linux</p>
+      <p class="verif">Credencial verificable en <a href="https://www.credly.com/badges/30d239d4-af64-45e0-9767-50092c6c36d3/public_url" rel="noopener">Credly</a></p>
+    </div>
+    <div class="cert reveal">
       <h3>Certificación — Desarrollo de Aplicaciones Iniciales</h3>
       <p class="detalle">INACAP · Junio 2026 · 162 horas: Programación Segura (90 h) + POO Seguro (72 h)</p>
       <p class="verif">Certificado N° 13992143 · Código B9BD6256E7A93F91 · verificable en <a href="https://www.inacap.cl" rel="noopener">inacap.cl</a></p>
@@ -305,17 +321,40 @@ footer{border-top:1px solid var(--linea);padding:30px 0;font-size:.75rem;color:v
 </section>
 
 <footer>
-  <div class="wrap foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="#">~/alexis<b style="color:var(--verde)">@tusitioya</b>:~$</a>
+      <p>Analista Programador &amp; desarrollador full-stack. Construyo software que resuelve problemas reales de negocio, de la primera línea a producción.</p>
+      <div class="foot-badges">
+        <span>Red Hat certified</span>
+        <span>Desarrollo de Aplicaciones · INACAP</span>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Proyectos</h4>
+      <ul>
+        <li><a href="https://turbopos.cl" rel="noopener"><span class="dot"></span>TurboPOS</a></li>
+        <li><a href="https://tusitioya.cl/voxmetrics" rel="noopener"><span class="dot"></span>VoxMetrics</a></li>
+        <li><a href="https://tusitioya.cl" rel="noopener"><span class="dot"></span>Ecosistema TuSitioYa</a></li>
+        <li><a href="#proyectos"><span class="dot"></span>Ver todos los proyectos</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="mailto:alexispferrada@gmail.com"><span class="dot"></span>alexispferrada@gmail.com</a></li>
+        <li><a href="https://wa.me/56991261916?text=Hola%20Alexis%2C%20vi%20tu%20portafolio" rel="noopener"><span class="dot"></span>WhatsApp</a></li>
+        <li><a href="https://github.com/alexispferrada-wq" rel="noopener"><span class="dot"></span>github.com/alexispferrada-wq</a></li>
+        <li><a href="cv-alexis-ferrada.pdf" download><span class="dot"></span>Descargar CV</a></li>
+        <li><span style="color:var(--suave)">Santiago, Chile 🇨🇱</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom foot">
     <span>© 2026 Alexis Ferrada · <a href="https://tusitioya.cl">TuSitioYa</a></span>
     <span>hecho a mano · deploy en Cloudflare Pages</span>
   </div>
 </footer>
-
-<div class="opt-switch">
-  <a class="act" href="opcion-a.html">A</a>
-  <a href="opcion-b.html">B</a>
-  <a href="opcion-c.html">C</a>
-</div>
 
 <script>
 /* Typing */
