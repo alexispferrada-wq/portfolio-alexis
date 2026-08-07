@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexis Ferrada · Terminal Inmersivo</title>
+<title>Alexis Ferrada · Desarrollador Full-Stack &amp; Agentes de IA</title>
+<meta name="description" content="Analista Programador y desarrollador full-stack. Creador de TrackAI, copiloto de mezcla con IA para DJs, TurboPOS y agentes de IA en producción. Python, Node.js, Electron, Cloudflare.">
+<meta name="author" content="Alexis Ferrada">
+<meta property="og:title" content="Alexis Ferrada · Desarrollador Full-Stack &amp; Agentes de IA">
+<meta property="og:description" content="Creador de TrackAI, copiloto de mezcla con IA para DJs. Software y agentes de IA en producción.">
+<meta property="og:type" content="website">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,6 +109,13 @@ nav{position:sticky;top:0;z-index:60;background:rgba(10,14,20,.8);backdrop-filte
 .estado.pre{color:#F5B759}
 .proyecto h3{font-size:1.35rem;margin-bottom:10px}
 .proyecto p{color:var(--suave);font-size:.9rem;max-width:560px}
+.proyecto.destacado{border-color:rgba(61,220,132,.35);box-shadow:0 0 0 1px rgba(61,220,132,.08),0 18px 50px rgba(0,0,0,.45)}
+.proyecto.destacado::before{opacity:1}
+.proyecto code{font-family:'JetBrains Mono',monospace;font-size:.82em;color:var(--cian);background:rgba(56,189,248,.08);border-radius:4px;padding:1px 5px}
+.bullets{list-style:none;margin-top:16px;display:grid;gap:7px;max-width:620px}
+.bullets li{font-size:.85rem;color:var(--suave);padding-left:16px;position:relative}
+.bullets li::before{content:"▸";position:absolute;left:0;color:var(--verde)}
+.bullets li b{color:var(--texto);font-weight:500}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .chip{font-size:.68rem;padding:5px 11px;border-radius:5px;border:1px solid var(--linea);color:var(--cian);background:rgba(56,189,248,.05)}
 .link{align-self:start;font-size:.82rem;white-space:nowrap}
@@ -129,6 +141,8 @@ nav{position:sticky;top:0;z-index:60;background:rgba(10,14,20,.8);backdrop-filte
 .cert h3{font-size:1.02rem;margin-bottom:5px}
 .cert .detalle{color:var(--suave);font-size:.85rem}
 .cert .verif{margin-top:12px;font-size:.72rem;color:var(--suave);border:1px dashed var(--linea);border-radius:6px;padding:9px 13px;display:inline-block}
+.cert.nuevo{border-color:rgba(61,220,132,.4);background:linear-gradient(135deg,rgba(61,220,132,.05),var(--panel))}
+.badge-new{font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--verde);border:1px solid rgba(61,220,132,.4);background:rgba(61,220,132,.1);border-radius:4px;padding:3px 8px;margin-left:9px;vertical-align:middle}
 
 /* CONTACTO */
 .contacto{background:linear-gradient(135deg, rgba(61,220,132,.08), rgba(56,189,248,.08));border:1px solid var(--linea);border-radius:18px;padding:64px 44px;text-align:center}
@@ -173,6 +187,7 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
       <li class="om"><a href="#proyectos">proyectos</a></li>
       <li class="om"><a href="#trayectoria">trayectoria</a></li>
       <li class="om"><a href="#stack">stack</a></li>
+      <li class="om"><a href="#formacion">formación</a></li>
       <li><a href="#contacto">contacto</a></li>
     </ul>
   </div>
@@ -180,12 +195,12 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
 
 <header class="hero">
   <div class="wrap">
-    <div class="status"><span class="pulse"></span> turbopos.cl — en producción</div>
-    <h1>Construyo software que ya está <span class="verde">cobrando en producción</span>.</h1>
+    <div class="status"><span class="pulse"></span> TrackAI · turbopos.cl — en producción</div>
+    <h1>Construyo software con <span class="verde">IA que ya está cobrando en producción</span>.</h1>
     <p class="typeline"><span id="typed"></span><span class="cursor"></span></p>
     <div class="cta">
       <a class="btn btn-verde" href="#proyectos">./ver-proyectos</a>
-      <a class="btn" href="cv-alexis-ferrada.pdf" download>cv --download</a>
+      <a class="btn" href="#formacion">./credenciales</a>
       <a class="btn" href="https://github.com/alexispferrada-wq" rel="noopener">portafolio · github</a>
     </div>
 
@@ -195,11 +210,15 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
         <div class="ln"><span class="p">$</span> whoami</div>
         <div class="ln"><span class="out">Alexis Ferrada — Analista Programador titulado · Ing. Informática INACAP (en curso)</span></div>
         <div class="ln"><span class="p">$</span> ls productos/</div>
-        <div class="ln"><span class="ok">turbopos.cl</span> <span class="out">·</span> <span class="warn">voxmetrics (pre-venta)</span> <span class="out">·</span> <span class="ok">ecosistema-tusitioya (9 productos)</span></div>
+        <div class="ln"><span class="ok">trackai (★ producto estrella)</span> <span class="out">·</span> <span class="ok">turbopos.cl</span> <span class="out">·</span> <span class="warn">voxmetrics (pre-venta)</span> <span class="out">·</span> <span class="ok">ecosistema-tusitioya (9 productos)</span></div>
+        <div class="ln"><span class="p">$</span> cat trackai/stack.txt</div>
+        <div class="ln"><span class="out">Electron 31 · Vanilla JS · PostgreSQL (Neon) · SQLite · Cloudflare Workers · Ed25519</span></div>
         <div class="ln"><span class="p">$</span> experiencia --resumen</div>
-        <div class="ln"><span class="out">10+ años en análisis de datos &amp; WFM → hoy full-stack Python/Node.js + IA</span></div>
+        <div class="ln"><span class="out">10+ años en análisis de datos &amp; WFM → hoy full-stack Python/Node.js + agentes de IA</span></div>
         <div class="ln"><span class="p">$</span> credenciales --destacadas</div>
-        <div class="ln"><span class="ok">Portafolio completo en GitHub</span> <span class="out">·</span> <span class="ok">Red Hat System Administration I</span> <span class="out">·</span> <span class="ok">Desarrollo de Aplicaciones Iniciales (INACAP)</span></div>
+        <div class="ln"><span class="ok">Red Hat System Administration I (RH124)</span> <span class="out">·</span> <span class="ok">Infraestructura TI Segura — INACAP 144 h</span> <span class="out">·</span> <span class="ok">Desarrollo de Aplicaciones Iniciales — INACAP 162 h</span></div>
+        <div class="ln"><span class="p">$</span> certificaciones --total-horas</div>
+        <div class="ln"><span class="out">306 horas certificadas por INACAP · todas verificables con código oficial</span></div>
       </div>
     </div>
   </div>
@@ -210,6 +229,39 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
     <h2 class="reveal">Proyectos</h2>
     <p class="sub reveal">Productos, no ejercicios. Cada proyecto resuelve un problema real de un negocio real: diseño, desarrollo, deploy y soporte.</p>
     <div class="proyectos">
+      <article class="proyecto reveal destacado">
+        <div>
+          <p class="estado">★ Producto estrella · En producción</p>
+          <h3>TrackAI — Copiloto de mezcla con IA para DJs</h3>
+          <p>Sistema de inteligencia musical en tiempo real para Serato DJ Pro. Lee en vivo la base <code>master.sqlite</code> cada 3 s (sin API pública) y sugiere la siguiente canción con un motor de recomendación multicapa sobre un espacio vectorial de firma armónica (Camelot), BPM, energía y género.</p>
+          <ul class="bullets">
+            <li><b>Base de datos vectorial:</b> cada track se modela como vector armónico; las sugerencias se calculan por similitud, no por reglas fijas.</li>
+            <li><b>Motor armónico Camelot:</b> transiciones por misma llave, escalas vecinas y saltos de energía calculados.</li>
+            <li><b>Live Pitch®:</b> detección de BPM con pitch aplicado, tendencia del set y zonas de mezcla adaptativas.</li>
+            <li><b>Cerebro que aprende:</b> memoria de transiciones personal y global con decay temporal, cold start y score de confianza.</li>
+            <li><b>Licenciamiento criptográfico:</b> tokens Ed25519 firmados, activación por key + device, revalidación en vivo y upgrade LITE → PRO automático.</li>
+            <li><b>Seguridad:</b> rate limiting, comparación timing-safe y anti-replay en webhooks.</li>
+            <li><b>Multiplataforma:</b> macOS (arm64) y Windows 10/11 desde un solo código base.</li>
+          </ul>
+          <div class="chips"><span class="chip">Electron 31</span><span class="chip">JavaScript</span><span class="chip">PostgreSQL · Neon</span><span class="chip">SQLite</span><span class="chip">Cloudflare Workers</span><span class="chip">Ed25519</span><span class="chip">Vector search</span><span class="chip">IA</span></div>
+        </div>
+        <a class="link" href="https://github.com/alexispferrada-wq/trackai-lib" rel="noopener">trackai-lib · open source →</a>
+      </article>
+      <article class="proyecto reveal">
+        <div>
+          <p class="estado">● En producción</p>
+          <h3>Agentes de IA a medida</h3>
+          <p>Diseño y despliegue de agentes autónomos integrados en productos reales: cotizadores conversacionales, radar de leads del CRM, soporte y clasificación automática. Orquestación de LLMs con function calling, RAG sobre datos del negocio y ejecución sobre Cloudflare Workers.</p>
+          <ul class="bullets">
+            <li>Agentes con herramientas (function/tool calling) conectados a APIs y bases de datos propias.</li>
+            <li>RAG con embeddings y búsqueda vectorial para respuestas ancladas al contexto del cliente.</li>
+            <li>Prompt engineering, control de costos por token y guardarraíles de seguridad.</li>
+            <li>Integración productiva en TuSitioYa, TurboPOS y VoxMetrics.</li>
+          </ul>
+          <div class="chips"><span class="chip">Claude API</span><span class="chip">OpenAI API</span><span class="chip">RAG</span><span class="chip">Embeddings</span><span class="chip">Function calling</span><span class="chip">Cloudflare Workers AI</span><span class="chip">Python</span></div>
+        </div>
+        <a class="link" href="https://tusitioya.cl" rel="noopener">ver en producción →</a>
+      </article>
       <article class="proyecto reveal">
         <div>
           <p class="estado">● En producción</p>
@@ -261,6 +313,11 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
         <h3>Ingeniería en Informática — INACAP</h3>
         <p>Plan de continuidad con mención en Ciberseguridad. Formación formal para respaldar lo construido en terreno.</p>
       </div>
+      <div class="hito reveal">
+        <p class="cuando">2026 — hoy</p>
+        <h3>TrackAI &amp; agentes de IA</h3>
+        <p>Desarrollo de TrackAI: app de escritorio multiplataforma con motor de recomendación vectorial, licenciamiento Ed25519 y backend en Cloudflare Workers. En paralelo, agentes de IA con RAG y function calling integrados en productos que ya facturan.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -269,10 +326,12 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
   <div class="wrap">
     <h2 class="reveal">Stack</h2>
     <div class="stack-grid">
-      <div class="stack-col reveal"><h3>Backend</h3><ul><li>Python — Django, Flask</li><li>Node.js</li><li>APIs REST</li><li>SQL Server · MySQL · PostgreSQL</li></ul></div>
-      <div class="stack-col reveal"><h3>Frontend</h3><ul><li>JavaScript</li><li>HTMX</li><li>Tailwind CSS</li><li>HTML5 semántico</li></ul></div>
-      <div class="stack-col reveal"><h3>IA &amp; datos</h3><ul><li>Anthropic API (Claude)</li><li>OpenAI API</li><li>Prompt engineering</li><li>Power BI</li></ul></div>
-      <div class="stack-col reveal"><h3>Operación</h3><ul><li>Git &amp; GitHub</li><li>Cloudflare (Pages, DNS)</li><li>Render / Netlify</li><li>Neon PostgreSQL</li></ul></div>
+      <div class="stack-col reveal"><h3>Backend</h3><ul><li>Python — Django, Flask</li><li>Node.js</li><li>APIs REST</li><li>SQL Server · MySQL · PostgreSQL</li><li>SQLite</li></ul></div>
+      <div class="stack-col reveal"><h3>Frontend &amp; escritorio</h3><ul><li>JavaScript (Vanilla)</li><li>Electron 31</li><li>HTMX</li><li>Tailwind CSS</li><li>PWA · HTML5 semántico</li></ul></div>
+      <div class="stack-col reveal"><h3>IA &amp; agentes</h3><ul><li>Anthropic API (Claude)</li><li>OpenAI API</li><li>Agentes con function calling</li><li>RAG · embeddings · búsqueda vectorial</li><li>faster-whisper (STT)</li><li>Prompt engineering</li></ul></div>
+      <div class="stack-col reveal"><h3>Seguridad</h3><ul><li>Criptografía Ed25519</li><li>Licenciamiento de software</li><li>Rate limiting · timing-safe</li><li>Anti-replay en webhooks</li><li>Administración Linux (RHEL)</li><li>Fundamentos de Seguridad de la Información</li><li>Sistemas operativos</li></ul></div>
+      <div class="stack-col reveal"><h3>Datos</h3><ul><li>Power BI</li><li>SQL avanzado</li><li>Modelado de datos</li><li>Workforce Management</li></ul></div>
+      <div class="stack-col reveal"><h3>Operación</h3><ul><li>Git &amp; GitHub</li><li>Cloudflare (Workers, Pages, DNS)</li><li>Render / Netlify</li><li>Neon PostgreSQL</li><li>Builds macOS arm64 · Windows</li></ul></div>
     </div>
   </div>
 </section>
@@ -285,10 +344,15 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
       <p class="detalle">Red Hat · Administración de sistemas Linux</p>
       <p class="verif">Credencial verificable en <a href="https://www.credly.com/badges/30d239d4-af64-45e0-9767-50092c6c36d3/public_url" rel="noopener">Credly</a></p>
     </div>
+    <div class="cert reveal nuevo">
+      <h3>Certificación — Infraestructura TI Segura <span class="badge-new">nuevo</span></h3>
+      <p class="detalle">INACAP · Agosto 2026 · 144 horas: Fundamentos de Seguridad de la Información (72 h) + Sistemas Operativos (72 h)</p>
+      <p class="verif">Certificado N° 14089093 · Código 742BF58FA044B783 · verificable en <a href="https://siga.inacap.cl/Inacap.VerificacionCertificados/Default.aspx" rel="noopener">Portal de Verificación INACAP</a></p>
+    </div>
     <div class="cert reveal">
       <h3>Certificación — Desarrollo de Aplicaciones Iniciales</h3>
-      <p class="detalle">INACAP · Junio 2026 · 162 horas: Programación Segura (90 h) + POO Seguro (72 h)</p>
-      <p class="verif">Certificado N° 13992143 · Código B9BD6256E7A93F91 · verificable en <a href="https://www.inacap.cl" rel="noopener">inacap.cl</a></p>
+      <p class="detalle">INACAP · 2026 · 162 horas: Programación Segura (90 h) + Programación Orientada a Objetos Segura (72 h)</p>
+      <p class="verif">Certificado N° 13992143 · Código B9BD6256E7A93F91 · verificable en <a href="https://siga.inacap.cl/Inacap.VerificacionCertificados/Default.aspx" rel="noopener">Portal de Verificación INACAP</a></p>
     </div>
     <div class="cert reveal">
       <h3>Ingeniería en Informática (en curso)</h3>
@@ -305,11 +369,11 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
   <div class="wrap">
     <div class="contacto reveal">
       <h2 style="justify-content:center">Busco mi próximo equipo</h2>
-      <p>Roles junior / trainee en desarrollo, datos o ciberseguridad. Remoto desde Chile o presencial en Santiago poniente. Disponibilidad inmediata.</p>
+      <p>Roles junior / trainee en desarrollo, IA, datos o ciberseguridad. Remoto desde Chile o presencial en Santiago poniente. Disponibilidad inmediata.</p>
       <div class="cta">
         <a class="btn btn-verde" href="mailto:alexispferrada@gmail.com">escríbeme</a>
         <a class="btn" href="https://wa.me/56991261916?text=Hola%20Alexis%2C%20vi%20tu%20portafolio" rel="noopener">whatsapp</a>
-        <a class="btn" href="cv-alexis-ferrada.pdf" download>cv --download</a>
+        <a class="btn" href="https://github.com/alexispferrada-wq" rel="noopener">github</a>
       </div>
       <div class="canales">
         <a href="mailto:alexispferrada@gmail.com">alexispferrada@gmail.com</a>
@@ -324,15 +388,19 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
   <div class="wrap foot-grid">
     <div class="foot-brand">
       <a class="logo" href="#">~/alexis<b style="color:var(--verde)">@tusitioya</b>:~$</a>
-      <p>Analista Programador &amp; desarrollador full-stack. Construyo software que resuelve problemas reales de negocio, de la primera línea a producción.</p>
+      <p>Analista Programador &amp; desarrollador full-stack con foco en IA. Construyo software y agentes que resuelven problemas reales de negocio, de la primera línea a producción.</p>
       <div class="foot-badges">
         <span>Red Hat certified</span>
+        <span>Infraestructura TI Segura · INACAP</span>
         <span>Desarrollo de Aplicaciones · INACAP</span>
+        <span>TrackAI · Live Pitch®</span>
       </div>
     </div>
     <div class="foot-col">
       <h4>Proyectos</h4>
       <ul>
+        <li><a href="https://github.com/alexispferrada-wq/trackai-lib" rel="noopener"><span class="dot"></span>TrackAI · trackai-lib</a></li>
+        <li><a href="#proyectos"><span class="dot"></span>Agentes de IA</a></li>
         <li><a href="https://turbopos.cl" rel="noopener"><span class="dot"></span>TurboPOS</a></li>
         <li><a href="https://tusitioya.cl/voxmetrics" rel="noopener"><span class="dot"></span>VoxMetrics</a></li>
         <li><a href="https://tusitioya.cl" rel="noopener"><span class="dot"></span>Ecosistema TuSitioYa</a></li>
@@ -345,7 +413,7 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
         <li><a href="mailto:alexispferrada@gmail.com"><span class="dot"></span>alexispferrada@gmail.com</a></li>
         <li><a href="https://wa.me/56991261916?text=Hola%20Alexis%2C%20vi%20tu%20portafolio" rel="noopener"><span class="dot"></span>WhatsApp</a></li>
         <li><a href="https://github.com/alexispferrada-wq" rel="noopener"><span class="dot"></span>github.com/alexispferrada-wq</a></li>
-        <li><a href="cv-alexis-ferrada.pdf" download><span class="dot"></span>Descargar CV</a></li>
+        <li><a href="#formacion"><span class="dot"></span>Credenciales verificables</a></li>
         <li><span style="color:var(--suave)">Santiago, Chile 🇨🇱</span></li>
       </ul>
     </div>
@@ -359,7 +427,7 @@ footer{border-top:1px solid var(--linea);padding:70px 0 0;font-size:.85rem;backg
 <script>
 /* Typing */
 (function(){
-  var frases=['Python · Django · Node.js · SQL','SaaS multi-tenant en producción','Integraciones con Claude y OpenAI','10+ años de datos → código que vende'];
+  var frases=['TrackAI · copiloto de mezcla con IA para DJs','Agentes de IA con RAG y function calling','Python · Django · Node.js · Electron · SQL','SaaS multi-tenant en producción','10+ años de datos → código que vende'];
   var el=document.getElementById('typed'),f=0,i=0,del=false;
   function tick(){
     var t=frases[f];
