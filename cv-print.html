@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Alexis Ferrada Pérez — Currículum Vitae</title>
+<style>
+@page{size:A4;margin:13mm 14mm}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Helvetica Neue",Arial,sans-serif;font-size:9.3pt;line-height:1.42;color:#1a1a1a}
+a{color:#0b6ea8;text-decoration:none}
+
+header{border-bottom:2.5pt solid #0f9d58;padding-bottom:7pt;margin-bottom:10pt}
+h1{font-size:19pt;letter-spacing:-.3pt;font-weight:700;color:#0b1320}
+.rol{font-size:9.8pt;color:#0f9d58;font-weight:600;margin-top:1.5pt}
+.contacto{margin-top:5pt;font-size:8.4pt;color:#444}
+.contacto span{margin-right:8pt}
+
+h2{font-size:9.2pt;text-transform:uppercase;letter-spacing:1.1pt;color:#0f9d58;
+   border-bottom:.6pt solid #d4d9e0;padding-bottom:2.5pt;margin:11pt 0 6pt}
+section:first-of-type h2{margin-top:2pt}
+
+.perfil{text-align:justify;color:#2c2c2c}
+
+.item{margin-bottom:7pt;page-break-inside:avoid}
+.item:last-child{margin-bottom:0}
+.linea{display:flex;justify-content:space-between;align-items:baseline;gap:8pt}
+.titulo{font-size:10pt;font-weight:700;color:#0b1320}
+.fecha{font-size:8pt;color:#6b7280;white-space:nowrap;font-weight:600}
+.meta{font-size:8.5pt;color:#555;font-style:italic;margin-bottom:2.5pt}
+.desc{text-align:justify;color:#2c2c2c}
+
+ul{list-style:none;margin-top:2.5pt}
+li{padding-left:8.5pt;position:relative;margin-bottom:1.6pt;text-align:justify}
+li::before{content:"–";position:absolute;left:0;color:#0f9d58;font-weight:700}
+li b{font-weight:700;color:#0b1320}
+
+.tech{font-size:8.2pt;color:#0b6ea8;margin-top:3pt}
+.tech b{color:#374151}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2pt 16pt}
+.sk{margin-bottom:2.5pt;font-size:8.8pt}
+.sk b{color:#0b1320;display:inline-block;min-width:62pt}
+
+.cert{margin-bottom:5pt;page-break-inside:avoid}
+.cert .titulo{font-size:9.3pt}
+.cod{font-size:7.7pt;color:#6b7280;font-family:"SF Mono",Menlo,monospace}
+
+.destacado{border-left:2.5pt solid #0f9d58;padding-left:7pt;background:#f6fdf9}
+footer{margin-top:9pt;padding-top:5pt;border-top:.6pt solid #d4d9e0;
+       font-size:7.6pt;color:#8a8f98;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Alexis Álvaro Ferrada Pérez</h1>
+  <p class="rol">Analista Programador · Desarrollador Full-Stack &amp; Agentes de IA</p>
+  <p class="contacto">
+    <span>alexispferrada@gmail.com</span>·
+    <span>+56 9 9126 1916</span>·
+    <span>Santiago, Chile</span>·
+    <span><a href="https://github.com/alexispferrada-wq">github.com/alexispferrada-wq</a></span>·
+    <span><a href="https://tusitioya.cl">tusitioya.cl</a></span>
+  </p>
+</header>
+
+<section>
+  <h2>Perfil profesional</h2>
+  <p class="perfil">Analista Programador titulado con más de 10 años de experiencia en análisis de datos y Workforce Management en operaciones de call center, hoy enfocado en desarrollo full-stack e inteligencia artificial aplicada. Fundador de TuSitioYa, con productos SaaS en producción facturando a clientes reales. Creador de TrackAI, aplicación de escritorio multiplataforma con motor de recomendación vectorial y licenciamiento criptográfico. Especializado en construir software que resuelve problemas concretos de negocio, desde el diseño hasta el despliegue y soporte en producción.</p>
+</section>
+
+<section>
+  <h2>Experiencia profesional</h2>
+
+  <div class="item">
+    <div class="linea"><span class="titulo">Fundador y Desarrollador Full-Stack</span><span class="fecha">2024 — Presente</span></div>
+    <p class="meta">TuSitioYa · Santiago, Chile</p>
+    <ul>
+      <li>Creación y operación de un ecosistema de 9 productos digitales para pymes, con desarrollo, despliegue y soporte end-to-end.</li>
+      <li>Desarrollo de <b>TrackAI</b>, copiloto de mezcla con IA para DJs: motor de recomendación multicapa sobre base de datos vectorial, licenciamiento Ed25519 y distribución en macOS y Windows.</li>
+      <li>Implementación de <b>agentes de IA</b> en producción: cotizadores conversacionales, radar de leads y soporte automatizado con RAG y function calling.</li>
+      <li>Desarrollo de <b>TurboPOS</b>, punto de venta SaaS multi-tenant en producción con autorización por PIN/QR.</li>
+      <li>Arquitectura y despliegue sobre Cloudflare Workers, Pages, Render y Neon PostgreSQL.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="linea"><span class="titulo">Analista de Datos y Workforce Management</span><span class="fecha">2013 — 2024</span></div>
+    <p class="meta">Entel · Teleperformance · Jazzplat · Xerox</p>
+    <ul>
+      <li>Dimensionamiento y planificación de operaciones de call center con impacto directo en costos y niveles de servicio.</li>
+      <li>Modelado de datos, consultas SQL avanzadas y construcción de tableros de control en Power BI.</li>
+      <li>Automatización de reportería e indicadores operacionales para equipos de gerencia.</li>
+      <li>Análisis de forecast, adherencia y productividad sobre dotaciones de gran volumen.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Proyectos destacados</h2>
+
+  <div class="item destacado">
+    <div class="linea"><span class="titulo">TrackAI — Copiloto de mezcla con IA para DJs</span><span class="fecha">2026 · Producción</span></div>
+    <p class="desc">Sistema de inteligencia musical en tiempo real para Serato DJ Pro. Lee en vivo la base <i>master.sqlite</i> cada 3 segundos, sin API pública, y sugiere la siguiente canción mediante un motor de recomendación multicapa.</p>
+    <ul>
+      <li><b>Base de datos vectorial:</b> cada track se modela por firma armónica (Camelot), BPM, energía y género; las sugerencias se calculan por similitud vectorial.</li>
+      <li><b>Motor armónico Camelot:</b> transiciones por misma llave, escalas vecinas y saltos de energía calculados.</li>
+      <li><b>Live Pitch®:</b> detección de BPM con pitch aplicado, tendencia del set y zonas de mezcla adaptativas.</li>
+      <li><b>Cerebro que aprende:</b> memoria de transiciones personal y global con decay temporal, cold start y score de confianza.</li>
+      <li><b>Licenciamiento criptográfico:</b> tokens Ed25519 firmados, activación por key y device, revalidación en vivo, upgrade LITE a PRO automático.</li>
+      <li><b>Seguridad:</b> rate limiting, comparación timing-safe y protección anti-replay en webhooks.</li>
+    </ul>
+    <p class="tech"><b>Stack:</b> Electron 31 · JavaScript · PostgreSQL (Neon) · SQLite · Cloudflare Workers · Ed25519</p>
+  </div>
+
+  <div class="item">
+    <div class="linea"><span class="titulo">Agentes de IA a medida</span><span class="fecha">Producción</span></div>
+    <p class="desc">Diseño y despliegue de agentes autónomos integrados en productos reales, con orquestación de LLMs, herramientas conectadas a APIs propias y respuestas ancladas al contexto del cliente.</p>
+    <ul>
+      <li>Agentes con function calling conectados a bases de datos y servicios internos.</li>
+      <li>RAG con embeddings y búsqueda vectorial sobre información del negocio.</li>
+      <li>Prompt engineering, control de costos por token y guardarraíles de seguridad.</li>
+    </ul>
+    <p class="tech"><b>Stack:</b> Claude API · OpenAI API · RAG · Embeddings · Cloudflare Workers AI · Python</p>
+  </div>
+
+  <div class="item">
+    <div class="linea"><span class="titulo">TurboPOS — Punto de venta SaaS multi-tenant</span><span class="fecha">Producción</span></div>
+    <p class="desc">Plataforma de punto de venta para almacenes y pymes, con autorización de supervisor por PIN/QR y pantalla de caja diseñada para uso sin capacitación previa.</p>
+    <p class="tech"><b>Stack:</b> Django · PostgreSQL · HTMX · Tailwind CSS · Multi-tenant</p>
+  </div>
+
+  <div class="item">
+    <div class="linea"><span class="titulo">VoxMetrics — Análisis de calidad de llamadas con IA</span><span class="fecha">Pre-venta</span></div>
+    <p class="desc">Transcripción y scoring automático de llamadas de call center, con reportes ejecutivos en PDF. Producto nacido de 10 años dentro de la operación.</p>
+    <p class="tech"><b>Stack:</b> Python · faster-whisper · Claude API · WeasyPrint</p>
+  </div>
+
+  <div class="item">
+    <div class="linea"><span class="titulo">trackai-lib — Librería open source</span><span class="fecha">Open source</span></div>
+    <p class="desc">Librería pública de solo lectura para la base de datos de Serato DJ Pro: crates, cue points (Serato Markers2) y motor armónico Camelot.</p>
+    <p class="tech"><b>Repositorio:</b> github.com/alexispferrada-wq/trackai-lib</p>
+  </div>
+</section>
+
+<section>
+  <h2>Competencias técnicas</h2>
+  <div class="grid2">
+    <p class="sk"><b>Backend</b> Python (Django, Flask), Node.js, APIs REST</p>
+    <p class="sk"><b>Frontend</b> JavaScript, Electron, HTMX, Tailwind CSS, PWA</p>
+    <p class="sk"><b>Bases de datos</b> PostgreSQL, MySQL, SQL Server, SQLite, Neon</p>
+    <p class="sk"><b>IA</b> Claude API, OpenAI API, RAG, embeddings, function calling</p>
+    <p class="sk"><b>Seguridad</b> Ed25519, licenciamiento, rate limiting, Linux RHEL</p>
+    <p class="sk"><b>Datos</b> SQL avanzado, Power BI, modelado, WFM</p>
+    <p class="sk"><b>Cloud</b> Cloudflare (Workers, Pages, DNS), Render, Netlify</p>
+    <p class="sk"><b>Herramientas</b> Git, GitHub, builds macOS arm64 y Windows</p>
+  </div>
+</section>
+
+<section>
+  <h2>Formación académica</h2>
+  <div class="item">
+    <div class="linea"><span class="titulo">Ingeniería en Informática</span><span class="fecha">2025 — Presente</span></div>
+    <p class="meta">INACAP · Plan de continuidad, mención Ciberseguridad</p>
+  </div>
+  <div class="item">
+    <div class="linea"><span class="titulo">Analista Programador — Titulado</span><span class="fecha">2013 — 2014</span></div>
+    <p class="meta">Instituto Profesional de Chile</p>
+  </div>
+</section>
+
+<section>
+  <h2>Certificaciones verificables</h2>
+
+  <div class="cert">
+    <div class="linea"><span class="titulo">Infraestructura TI Segura — 144 horas</span><span class="fecha">Agosto 2026</span></div>
+    <p class="meta">INACAP · Fundamentos de Seguridad de la Información (72 h) + Sistemas Operativos (72 h)</p>
+    <p class="cod">Certificado N° 14089093 · Código 742BF58FA044B783 · Verificable en siga.inacap.cl</p>
+  </div>
+
+  <div class="cert">
+    <div class="linea"><span class="titulo">Desarrollo de Aplicaciones Iniciales — 162 horas</span><span class="fecha">2026</span></div>
+    <p class="meta">INACAP · Programación Segura (90 h) + Programación Orientada a Objetos Segura (72 h)</p>
+    <p class="cod">Certificado N° 13992143 · Código B9BD6256E7A93F91 · Verificable en siga.inacap.cl</p>
+  </div>
+
+  <div class="cert">
+    <div class="linea"><span class="titulo">Red Hat System Administration I (RH124) — Versión 9.3</span><span class="fecha">Red Hat</span></div>
+    <p class="meta">Administración de sistemas Linux sobre RHEL</p>
+    <p class="cod">Insignia verificable en Credly</p>
+  </div>
+</section>
+
+<section>
+  <h2>Disponibilidad</h2>
+  <p class="perfil">Búsqueda de roles junior o trainee en desarrollo de software, inteligencia artificial, datos o ciberseguridad. Modalidad remota desde Chile o presencial en Santiago poniente. Disponibilidad inmediata.</p>
+</section>
+
+<footer>Alexis Álvaro Ferrada Pérez · alexispferrada@gmail.com · +56 9 9126 1916 · github.com/alexispferrada-wq</footer>
+
+</body>
+</html>
